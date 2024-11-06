@@ -17,6 +17,7 @@ output "private_endpoints" {
 output "resource_id" {
   description = "The Azure resource id of the key vault."
   value       = azurerm_key_vault.this.id
+  type = string
 }
 
 output "secrets_resource_ids" {
